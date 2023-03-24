@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // Replace with your OpenAI API key
-const apiKey = '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';
+const apiKey = `${process.env.API_KEY}`;
 const configuration = new Configuration({ apiKey: apiKey });
 const openai = new OpenAIApi(configuration);
 
