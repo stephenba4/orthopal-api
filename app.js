@@ -10,7 +10,7 @@ require('dotenv').config();
 app.use(express.json());
 
 const corsOptions = {
-  origin: ['https://soulguru.xyz', 'http://localhost:3000'],
+  origin: ['https://www.soulguru.xyz', 'http://localhost:3000'],
 };
 app.use(cors(corsOptions));
 
