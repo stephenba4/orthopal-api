@@ -1,6 +1,3 @@
-// to run api locally: node app.js
-// to test api without frontend locally: curl -X POST -H "Content-Type: application/json" -d '{"question": "how to do somatic healing"}' http://localhost:3001/ask
-
 const express = require('express');
 const { Configuration, OpenAIApi } = require('openai');
 const cors = require('cors'); // Add this line
@@ -10,6 +7,7 @@ require('dotenv').config();
 app.use(express.json());
 
 const corsOptions = {
+  // TO DO: edit cors origin to include the url of the front end website
   origin: ['https://www.soulguru.xyz', 'http://localhost:3000'],
 };
 app.use(cors(corsOptions));

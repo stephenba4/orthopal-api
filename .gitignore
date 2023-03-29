@@ -1,5 +1,5 @@
-# Ignore node_modules
+# dependencies
 node_modules/
 
-# Ignore .env file to prevent sensitive data from being committed
-.env
+# local env files
+.env*.local
