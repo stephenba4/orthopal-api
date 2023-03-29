@@ -1,9 +1,5 @@
-// soulguru.ai your spiritual awakening tour guide
-// write a next.js, tailwind and typescript front end for SoulGuru
-// it needs a textbox input for users to type their questions in and an area for the chatbot to respond
-// make the design simple, professional and appealing with muted colors
-// to run: in first terminal: node app.js
-// in second terminal: curl -X POST -H "Content-Type: application/json" -d '{"question": "how to do somatic healing"}' http://localhost:3000/ask
+// to run api locally: node app.js
+// to test api without frontend locally: curl -X POST -H "Content-Type: application/json" -d '{"question": "how to do somatic healing"}' http://localhost:3001/ask
 
 const express = require('express');
 const { Configuration, OpenAIApi } = require('openai');
