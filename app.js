@@ -7,8 +7,8 @@ require('dotenv').config();
 app.use(express.json());
 
 const corsOptions = {
-  // TO DO: edit cors origin to include the url of the front end website
-  origin: ['https://babygenie-api.vercel.app', 'http://localhost:3000'],
+  // TO DO: edit cors origin to include the referer url of the front end website
+  origin: ['https://babygenie-fe.vercel.app', 'http://localhost:3000'],
 };
 app.use(cors(corsOptions));
 
