@@ -35,7 +35,7 @@ app.post('/ask', async (req, res) => {
         },
         { role: 'user', content: question },
       ],
-      temperature: 0.6,
+      temperature: 0.7,
       // usage: {
       //   prompt_tokens: 30,
       //   completion_tokens: 30,
