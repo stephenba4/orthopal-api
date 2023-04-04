@@ -8,7 +8,7 @@ app.use(express.json());
 
 const corsOptions = {
   // TO DO: edit cors origin to include the url of the front end website
-  origin: ['http://localhost:3000'],
+  origin: ['https://babygenie-api.vercel.app', 'http://localhost:3000'],
 };
 app.use(cors(corsOptions));
 
