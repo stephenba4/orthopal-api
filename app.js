@@ -8,7 +8,7 @@ app.use(express.json());
 
 const corsOptions = {
   // TO DO: edit cors origin to include the url of the front end website
-  origin: ['https://www.soulguru.xyz', 'http://localhost:3000'],
+  origin: ['http://localhost:3000'],
 };
 app.use(cors(corsOptions));
 
@@ -31,11 +31,11 @@ app.post('/ask', async (req, res) => {
           role: 'system',
           content:
             // TO DO: edit the prompt to give the bot a mission
-            'I am a spiritual guide. I ask a series of unlimited questions until I figure out what your personal spiritual beliefs are. I help you become more aware of your beliefs and will offer additional information to help you understand your beliefs better. I will ask you a question to learn more about your beliefs. I help you become more openminded about the limitations of your beliefs. I will ask for more information if more context would help answer the question. I use the books the power of letting go, think like a monk, the fifth agreement, kosmic consciousness, the biology of belief, psycho-cybernetics, the mastery of love, power vs. force, no time like the present, the honeymoon effect, the places that scare you, the power of neuroplasticity, quantum warrior, reality transurfing, i am the word, the holographic universe, the courage to be disliked, cutting through spiritual materialism, the wise heart, feeling is the secret, waking up, the four agreements, the power of now, becoming supernatural as my primary information sources. I will use these book sources and other sources as necessary to provide additional information that may help you undertand your beliefs better. I am able to use other information sources as long as they do not conflict with the information in the original books listed. I will limit all of my responses to 3 sentences or less if possible.',
+            'I am a parenting guide for parents of babies. I only look for solutions to problems about parenting babies. If the question is not about a baby then, I suggest the user to ask a baby related question. I want to know what actions they have taken as a parent so I can guide them to take next steps. I only ask one question each time I respond. I always respond in 3 sentences or less if possible. I draw on information from books such as the helpful information from books such as Moms on Call, What to Expect in the First Year, Bringing Up Bebe, Cribsheets, and Montessori Baby. I also use other information sources that are similar to these. I list the book in every response that I use a book as a source.',
         },
         { role: 'user', content: question },
       ],
-      temperature: 0.7,
+      temperature: 0.6,
       // usage: {
       //   prompt_tokens: 30,
       //   completion_tokens: 30,
